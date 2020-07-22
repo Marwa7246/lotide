@@ -9,17 +9,6 @@ const assertArraysEqual = function(array1, array2) {
   }
   console.log(String.fromCodePoint(0x1F600) + String.fromCodePoint(0x1F600) + "Assertion Passed:" , array1 , '===' , array2);
 };
-
-//const withoutOne = function(source, removeElement) {
-//  let result=[];
-//  for (let i = 0; i < source.length; i++) {
-//    if (removeElement !== source[i]) {
-//      result.push(source[i]);
-//    }
-//  }
-//  return result;
-//};
-
 const without = function(source, itemsToRemove) {
   let result = [];
   for (let i = 0; i < source.length; i++) {
@@ -32,13 +21,12 @@ const without = function(source, itemsToRemove) {
     if (x === itemsToRemove.length) {
       result.push(source[i]);
     }
-    
   }
   return result;
 };
 
 //console.log(without([1, 2, 3], [1])) // => [2, 3]
-console.log(without(["1", "2", "3"], [1, 2, "3"])); // => ["1", "2"]
+//console.log(without(["1", "2", "3"], [1, 2, "3"])); // => ["1", "2"]
 assertArraysEqual(without([1, 2, 3], [1]),[2, 3]);
 assertArraysEqual(without(["1", "2", "3"], [1, 2, "3"]),["1", "2"]);
 assertArraysEqual(without(["4", "8", "6", "7", "10"], ["7", "4", "3"]),["8", "6", "10"]);
