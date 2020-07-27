@@ -1,4 +1,5 @@
 
+//Implement a function which will test functions that return objects.
 //A function that compares 2 objects
 const eqArrays = function(array1, array2) {
   for (let i = 0; i < array1.length; i++) {
