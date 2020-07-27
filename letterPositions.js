@@ -62,4 +62,5 @@ assertArraysEqual(results1['n'], [12]);
 
 
 
+module.exports = letterPositions;
 

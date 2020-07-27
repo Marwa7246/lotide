@@ -38,3 +38,4 @@ assertArraysEqual(without(words, ["lighthouse"]), ["hello", "world"]);
 assertArraysEqual(words, ["hello", "world", "lighthouse"]);
 
 
+module.exports = without;

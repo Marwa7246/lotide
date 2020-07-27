@@ -53,3 +53,6 @@ assertArraysEqual(result1, [ 'aaa', 'bbb', 3, 4, 5, 6 ]);
 const result2 = flatten([0, 8, [3, 4], 5, [6]]);
 //console.log(result2);
 assertArraysEqual(result2, [ 0, 8, 3, 4, 5, 6 ]);
+
+
+module.exports = flatten;

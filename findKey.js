@@ -48,3 +48,4 @@ console.log(result2);
 assertEqual(result1, "noma");
 assertEqual(result2, undefined);
 
+module.exports = findKey;

@@ -62,3 +62,6 @@ Expected Output
 ---
 [ 'I\'ve', 'been', 'to', 'Hollywood' ]
 */
+
+
+module.exports = takeUntil;
