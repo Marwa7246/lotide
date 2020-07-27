@@ -1,5 +1,48 @@
-const assert = require('chai').assert; 
+const assert = require ('chai').assert;
+const tail = require ('../tail');
 
+describe ('#tail', () => {
+  
+  it('returns output array length of 2 if input is ["Hello", "Lighthouse", "Labs"]', () => {
+    const input = ["Hello", "Lighthouse", "Labs"];
+    assert.strictEqual(tail(input).length, 2);
+  });
+
+  it('returns ["Lighthouse", "Labs"] for ["Hello", "Lighthouse", "Labs"]', () => {
+
+    const input = ["Hello", "Lighthouse", "Labs"];
+    const expectedOutput =  ["Lighthouse", "Labs"];
+    assert.deepEqual(tail(input), expectedOutput);
+  });
+  
+  it('returns [ 6, 7] for [5, 6, 7]', () => {
+
+    const input = [5, 6, 7];
+    const expectedOutput =  [6, 7];
+    assert.deepEqual(tail(input), expectedOutput);
+  });
+
+  it('returns an empty array  if input is [7]', () => {
+    const input = [7];
+    assert.strictEqual(tail(input).length, 0);
+  });
+
+  it('returns an empty array  if input an empty array', () => {
+    const input = [];
+    const expectedOutput =  [];
+
+    assert.deepEqual(tail(input), expectedOutput);
+  });
+
+  it('does not mutate the input array after excuting the function on it', () => {
+    const input = ["Yo Yo", "Lighthouse", "Labs"];
+    tail(input);// run the functiono, then we then that the input didn't change
+    const expectedOutput =  ["Yo Yo", "Lighthouse", "Labs"];
+
+    assert.deepEqual(input, expectedOutput);
+  });
+
+});
 
 
 /*
