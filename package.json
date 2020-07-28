@@ -1,8 +1,8 @@
 {
-  "name": "lotide",
+  "name": "@mragheb/lotide",
   "version": "1.0.0",
   "description": "",
-  "main": "assertArraysEqual.js",
+  "main": "index.js",
   "directories": {
     "test": "test"
   },
@@ -13,7 +13,10 @@
     "type": "git",
     "url": "git+https://github.com/Marwa7246/lotide.git"
   },
-  "author": "",
+  "author": { "name": "Marwa Ragheb",
+              "email":"marwa.ragheb@gmail.com",
+              "url":  "https://github.com/Marwa7246"
+            },
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Marwa7246/lotide/issues"
